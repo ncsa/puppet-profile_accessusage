@@ -5,6 +5,10 @@
 # @example
 #   include profile_accessusage
 class profile_accessusage {
+  group { 'accessusage':
+    ensure => 'present'
+    gid    => '983'
+  }
   user { 'accessusage':
     ensure  => 'present',
     comment => 'Account for accessusage queries',
