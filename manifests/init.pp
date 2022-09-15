@@ -8,9 +8,9 @@ class profile_accessusage {
   user { 'accessusage':
     ensure  => 'present',
     comment => 'Account for accessusage queries',
-    home    => '/'
-    shell   => '/sbin/nologin'
-    uid     => '989'
-    gid     => '983'
+    home    => '/',
+    shell   => '/sbin/nologin',
+    uid     => '989',
+    gid     => '983',
   }
 }
